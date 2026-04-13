@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://example.com/sarah-j.jpg",
+    "email": "s.jenkins@webmail.com",
+    "days_since_contact": 5,
+    "status": "current",
+    "tags": ["work", "mentor"],
+    "bio": "Former manager at TechCorp. Great resource for career advice.",
+    "goal": 30,
+    "next_due_date": "2025-08-10"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thorne",
+    "picture": "https://example.com/m-thorne.jpg",
+    "email": "marcus.t@provider.net",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["childhood", "gaming"],
+    "bio": "Grew up on the same street. We play tactical shooters on weekends.",
+    "goal": 14,
+    "next_due_date": "2025-06-28"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://example.com/elena-r.jpg",
+    "email": "elena.rod@studio.com",
+    "days_since_contact": 2,
+    "status": "current",
+    "tags": ["close friend", "art"],
+    "bio": "Local painter. We visit galleries together once a month.",
+    "goal": 7,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 4,
+    "name": "David Chen",
+    "picture": "https://example.com/d-chen.jpg",
+    "email": "dchen_dev@fastmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["college", "tech"],
+    "bio": "Study partner from CS 101. Into open-source projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 5,
+    "name": "Priya Sharma",
+    "picture": "https://example.com/priya-s.jpg",
+    "email": "psharma@consulting.org",
+    "days_since_contact": 60,
+    "status": "dormant",
+    "tags": ["professional", "networking"],
+    "bio": "Met at the 2024 Design Conference. Possible collaboration on UI projects.",
+    "goal": 90,
+    "next_due_date": "2025-09-15"
+  },
+  {
+    "id": 6,
+    "name": "Leo Maxwell",
+    "picture": "https://example.com/leo-m.jpg",
+    "email": "maxwell.leo@service.com",
+    "days_since_contact": 1,
+    "status": "current",
+    "tags": ["neighbor", "fitness"],
+    "bio": "Gym partner and neighbor. Keeps me motivated for morning runs.",
+    "goal": 3,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 7,
+    "name": "Amina Okafor",
+    "picture": "https://example.com/amina-o.jpg",
+    "email": "amina.writes@blog.com",
+    "days_since_contact": 10,
+    "status": "current",
+    "tags": ["travel", "close friend"],
+    "bio": "Met while backpacking in Europe. Shared love for street food.",
+    "goal": 21,
+    "next_due_date": "2025-07-24"
+  },
+  {
+    "id": 8,
+    "name": "Sam Wilson",
+    "picture": "https://example.com/sam-w.jpg",
+    "email": "swilson@academy.edu",
+    "days_since_contact": 100,
+    "status": "overdue",
+    "tags": ["high school"],
+    "bio": "Old friend from the debate team. Haven't spoken in a while.",
+    "goal": 60,
+    "next_due_date": "2025-05-30"
+  },
+  {
+    "id": 9,
+    "name": "Chloe Varga",
+    "picture": "https://example.com/chloe-v.jpg",
+    "email": "varga.chloe@agency.net",
+    "days_since_contact": 14,
+    "status": "current",
+    "tags": ["work", "freelance"],
+    "bio": "Photographer I hire for events. Very reliable and creative.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 10,
+    "name": "Julian Smith",
+    "picture": "https://example.com/j-smith.jpg",
+    "email": "julian.smith@archive.com",
+    "days_since_contact": 8,
+    "status": "current",
+    "tags": ["family", "hobbyist"],
+    "bio": "Cousin who collects vintage vinyl records. Always has music recs.",
+    "goal": 30,
+    "next_due_date": "2025-08-04"
+  }
+]
