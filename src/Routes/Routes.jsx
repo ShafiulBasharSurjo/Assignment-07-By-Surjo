@@ -21,8 +21,9 @@ export const Routes = createBrowserRouter([
         element: <Stats />,
       },
       {
-        path: "/fdetails",
+        path: "/fdetails/:id",
         element: <FreindsDetails />,
+        loader: () => fetch("/Data.json").then((res) => res.json()),
       },
       {
         path: "/timeline",
