@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
       <aside>
-        <h2 class="text-5xl font-black tracking-tight mb-4">KeenKeeper</h2>
+        <h2 className="text-5xl font-black tracking-tight mb-4">KeenKeeper</h2>
         <p className="text-white-100">
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the relationships that matter most.
