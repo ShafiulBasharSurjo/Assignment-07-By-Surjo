@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { LuBellRing, LuMessageSquareMore } from "react-icons/lu";
 import { HiMiniArchiveBox } from "react-icons/hi2";
 import { MdDeleteOutline } from "react-icons/md";
 import { IoVideocamOutline } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
+import { FriendContext } from "../../Context/FriendProvider";
 
 const statusStyles = {
   "On-Track": "badge badge-success",
@@ -18,11 +19,12 @@ const FreindsDetails = () => {
   const friends = useLoaderData();
 
   const expectedFriend = friends.find((friend) => friend.id == id);
-  console.log(expectedFriend, "expectedFriend");
+
+  const { handleVideo, handleCall, handleText } = useContext(FriendContext);
 
   return (
     <>
-      <div className="min-h-screen bg-slate-50 p-4 md:p-10 font-sans">
+      <div className="min-h-fit bg-slate-50 p-4 md:p-10 font-sans">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
           <div className="md:col-span-4 space-y-4">
             <div
@@ -60,11 +62,11 @@ const FreindsDetails = () => {
                     {expectedFriend.status}
                   </div>
                   <div className="text-center">
-                    <p className="text-[#5D6B82] text-lg font-medium mt-1 mb-4">
-                      {expectedFriend.bio}
+                    <p className="text-[#5D6B82] font-medium mt-1 mb-4 italic">
+                      "{expectedFriend.bio}"
                     </p>
                     <p className="text-[#5D6B82] text-xs mt-1 mb-4">
-                      Preferred: Email
+                      Preferred: {expectedFriend.email}
                     </p>
                   </div>
                 </div>
@@ -139,19 +141,28 @@ const FreindsDetails = () => {
               <div className="grid grid-cols-3 gap-4">
                 <button className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group">
                   <FiPhoneCall />
-                  <span className="text-sm font-semibold text-slate-700">
+                  <span
+                    className="text-sm font-semibold text-slate-700"
+                    onClick={() => handleCall(expectedFriend)}
+                  >
                     Call
                   </span>
                 </button>
 
                 <button className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group">
                   <LuMessageSquareMore />
-                  <span className="text-sm font-semibold text-slate-700">
+                  <span
+                    className="text-sm font-semibold text-slate-700"
+                    onClick={() => handleText(expectedFriend)}
+                  >
                     Text
                   </span>
                 </button>
 
-                <button className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group">
+                <button
+                  className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group"
+                  onClick={() => handleVideo(expectedFriend)}
+                >
                   <IoVideocamOutline />
                   <span className="text-sm font-semibold text-slate-700">
                     Video
