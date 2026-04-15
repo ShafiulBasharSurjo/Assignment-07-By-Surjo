@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <FriendProvider>
-      <RouterProvider router={Routes} />,
+      <RouterProvider router={Routes} />
       <ToastContainer />
     </FriendProvider>
   </StrictMode>,

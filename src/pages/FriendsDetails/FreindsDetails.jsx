@@ -139,22 +139,22 @@ const FreindsDetails = () => {
               </h3>
 
               <div className="grid grid-cols-3 gap-4">
-                <button className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group">
+                <button
+                  className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group"
+                  onClick={() => handleCall(expectedFriend)}
+                >
                   <FiPhoneCall />
-                  <span
-                    className="text-sm font-semibold text-slate-700"
-                    onClick={() => handleCall(expectedFriend)}
-                  >
+                  <span className="text-sm font-semibold text-slate-700">
                     Call
                   </span>
                 </button>
 
-                <button className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group">
+                <button
+                  className="flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border border-transparent hover:border-emerald-200 hover:bg-emerald-50 transition group"
+                  onClick={() => handleText(expectedFriend)}
+                >
                   <LuMessageSquareMore />
-                  <span
-                    className="text-sm font-semibold text-slate-700"
-                    onClick={() => handleText(expectedFriend)}
-                  >
+                  <span className="text-sm font-semibold text-slate-700">
                     Text
                   </span>
                 </button>
