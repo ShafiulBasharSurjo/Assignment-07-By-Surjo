@@ -13,7 +13,11 @@ const Icons = {
 const TimeLine = () => {
   const { storedFriends } = useContext(FriendContext);
 
-  console.log(storedFriends, "Friends");
+  const today = new Date().toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 
   return (
     <>
@@ -60,6 +64,7 @@ const TimeLine = () => {
                         {friend.name}
                       </span>
                     </h2>
+                    <p>{today}</p>
                   </div>
                 </div>
               );

@@ -122,7 +122,7 @@ const FreindsDetails = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex justify-between items-start">
               <div>
                 <h3 className="text-[#1e3a2f] font-bold text-lg mb-2">
-                  Relationship Goal
+                  Relationship Goal {expectedFriend.goal}
                 </h3>
                 <p className="text-slate-500 text-sm">
                   Connect every{" "}

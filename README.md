@@ -1,16 +1,31 @@
-# React + Vite
+KeenKeepers : Personal Connection Manager
+Keenkeeper is a specialized dashboard designed to help you nurture and maintain meaningful relationships. Instead of letting time slip away, this tool tracks your last interactions and reminds you when it’s time to reach out to the people who matter most.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies Used :
 
-Currently, two official plugins are available:
+React (Vite): High-performance frontend framework.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tailwind CSS: For sleek, modern styling and responsive layouts.
 
-## React Compiler
+DaisyUI: For consistent and accessible UI components (like the Hero and Cards).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Icons: For intuitive visual cues.
 
-## Expanding the ESLint configuration
+JSON API: Simulated backend data for contact management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Key Features
+
+1. Proactive Relationship Health Tracking
+   The app automatically categorizes your connections into On-Track, Almost Due, or Overdue based on your personal contact goals. This visual "health check" ensures no friendship is forgotten in the hustle of daily life.
+
+2. Real-Time Engagement Analytics
+   The dashboard features dynamic "Home Cards" that provide an instant snapshot of your social life, including:
+
+Total connection count.
+
+Total friends requiring immediate attention.
+
+Total number of interactions made within the last 30 days.
+
+3. Contextual Contact Bios
+   Every friend has a dedicated profile that stores their background, shared interests (tags), and career history. Whether it's a "Gym Partner" or a "Tech Mentor," you'll always have the right context before you reach out.
