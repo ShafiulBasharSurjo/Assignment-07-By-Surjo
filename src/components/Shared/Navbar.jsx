@@ -61,7 +61,7 @@ const Navbar = () => {
             </h1>
           </div>
           <div className="flex-none">
-            <ul className="menu menu-horizontal px-1">{links}</ul>
+            <ul className="menu menu-horizontal px-1 gap-3">{links}</ul>
           </div>
         </div>
       </nav>

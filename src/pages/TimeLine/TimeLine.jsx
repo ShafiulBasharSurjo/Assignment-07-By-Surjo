@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { FriendContext } from "../../Context/FriendProvider";
 import { BsChatSquareText } from "react-icons/bs";
 import { FaAngleDown, FaVideo } from "react-icons/fa";
@@ -12,6 +12,7 @@ const Icons = {
 
 const TimeLine = () => {
   const { storedFriends } = useContext(FriendContext);
+  const [sortingType, setSortingType] = useState("");
 
   const today = new Date().toLocaleDateString("en-US", {
     month: "long",
@@ -38,13 +39,13 @@ const TimeLine = () => {
                   tabIndex="-1"
                   className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
                 >
-                  <li>
+                  <li onClick = {()=> setSortingType('Call')}>
                     <a>Call</a>
                   </li>
-                  <li>
+                  <li onClick = {()=> setSortingType('Text')}>
                     <a>Text</a>
                   </li>
-                  <li>
+                  <li onClick = {()=> setSortingType('Video')}>
                     <a>Video Call</a>
                   </li>
                 </ul>
