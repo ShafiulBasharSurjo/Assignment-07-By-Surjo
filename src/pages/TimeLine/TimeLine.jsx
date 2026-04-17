@@ -46,21 +46,22 @@ const TimeLine = () => {
                 </ul>
               </div>
             </div>
-            {storedFriends.map((friend) => {
+            {storedFriends.map((friend, index) => {
               return (
-                <>
-                  <div className="card card-dash bg-base-100 max-w-3xl mx-auto mb-3 px-2 md:px-0">
-                    <div className="card-body py-3 px-4 md:py-4 md:px-6">
-                      <h2 className="card-title text-sm md:text-base flex items-center gap-2">
-                        {Icons[friend.type]}
-                        <span>
-                          <span className="font-bold">{friend.type}</span> with{" "}
-                          {friend.name}
-                        </span>
-                      </h2>
-                    </div>
+                <div
+                  key={index}
+                  className="card card-dash bg-base-100 max-w-3xl mx-auto mb-3 px-2 md:px-0"
+                >
+                  <div className="card-body py-3 px-4 md:py-4 md:px-6">
+                    <h2 className="card-title text-sm md:text-base flex items-center gap-2">
+                      {Icons[friend.type]}
+                      <span>
+                        <span className="font-bold">{friend.type}</span> with{" "}
+                        {friend.name}
+                      </span>
+                    </h2>
                   </div>
-                </>
+                </div>
               );
             })}
           </div>
